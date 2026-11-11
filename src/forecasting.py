@@ -33,7 +33,7 @@ def ses_level(y, alpha):
 def weekday_index(dates, y):
     """Mean demand of each weekday / overall mean (1.0 = average day). Index 0 = Monday."""
     s = pd.Series(np.asarray(y, float), index=pd.DatetimeIndex(dates))
-    idx = (s.groupby(s.index.dayofweek).mean() / s.mean()).reindex(range(7))
+    idx = (s.groupby(s.index.day_of_week).mean() / s.mean()).reindex(range(7))
     return idx.fillna(1.0)
 
 
@@ -43,7 +43,7 @@ METHODS = {
     "Moving avg 28": lambda y, d, f: np.repeat(moving_average(y, 28), len(f)),
     "SES a=0.1": lambda y, d, f: np.repeat(ses_level(y, 0.1), len(f)),
     "SES a=0.3": lambda y, d, f: np.repeat(ses_level(y, 0.3), len(f)),
-    "MA28 x weekday": lambda y, d, f: moving_average(y, 28) * weekday_index(d, y).reindex(pd.DatetimeIndex(f).dayofweek).to_numpy(),
+    "MA28 x weekday": lambda y, d, f: moving_average(y, 28) * weekday_index(d, y).reindex(pd.DatetimeIndex(f).day_of_week).to_numpy(),
 }
 DEFAULT_METHOD = "MA28 x weekday"
 
