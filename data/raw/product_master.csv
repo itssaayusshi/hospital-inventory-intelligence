@@ -1,0 +1,11 @@
+product_id,product_name,category,unit_cost_inr,preferred_vendor,lead_time_days,criticality,unit_of_measure,active
+P001,Surgical Gloves (Pair),PPE,5.0,Vendor A,5,Vital,unit,True
+P002,Disposable Syringe 5ml,Injection,3.2,Vendor B,7,Vital,unit,True
+P003,IV Infusion Set,IV Supplies,22.0,Vendor C,6,Vital,unit,True
+P004,Face Mask,PPE,1.8,Vendor A,4,Essential,unit,True
+P005,Gauze Roll,Wound Care,14.0,Vendor D,8,Essential,unit,True
+P006,Adhesive Bandage,Wound Care,2.5,Vendor D,8,Desirable,unit,True
+P007,Urinary Catheter,Catheter,48.0,Vendor E,10,Vital,unit,True
+P008,Alcohol Swab,Disinfection,0.9,Vendor B,7,Essential,unit,True
+P009,Disposable Cap,PPE,1.2,Vendor A,4,Desirable,unit,True
+P010,Cotton Roll,Wound Care,18.0,Vendor D,8,Essential,unit,True

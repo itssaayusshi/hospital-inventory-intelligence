@@ -1,0 +1,11 @@
+product_id,OPENING,RECEIPT,ISSUE,EXPIRY_WRITE_OFF,ledger_closing,batch_snapshot,difference,lowest_daily_balance,status_check,product_name
+P001,1049,5360,-5744,0,665,665,0,56,Reconciled,Surgical Gloves (Pair)
+P002,817,3520,-4180,0,157,157,0,0,Reconciled,Disposable Syringe 5ml
+P003,276,2190,-2263,0,203,203,0,0,Reconciled,IV Infusion Set
+P004,1236,7510,-8087,0,659,659,0,64,Reconciled,Face Mask
+P005,231,1420,-1568,0,83,83,0,8,Reconciled,Gauze Roll
+P006,403,2950,-2903,0,450,450,0,60,Reconciled,Adhesive Bandage
+P007,106,640,-672,-74,0,0,0,0,Reconciled,Urinary Catheter
+P008,1880,8330,-9587,-107,516,516,0,0,Reconciled,Alcohol Swab
+P009,666,5240,-5110,0,796,796,0,51,Reconciled,Disposable Cap
+P010,203,1120,-1214,0,109,109,0,0,Reconciled,Cotton Roll
